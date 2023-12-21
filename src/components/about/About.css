@@ -1,0 +1,59 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Resim ve metin kutularını sırasıyla 1 ve 3 fraksiyon genişlikte yerleştir */
+    column-gap: 1.875rem;
+}
+
+.about_data {
+    display: grid;
+    width: 100%;
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+    box-sizing: border-box;
+}
+.section_title{
+    margin-top: 145px;
+}
+.about_data::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+.about_description{
+    margin-bottom: 1rem;
+    text-align: justify;
+    width: 100%;
+    display: block;
+    padding: 0; /* Eğer bir padding varsa sıfırlayın */
+    margin: 0;
+}
+.about_skills{
+    row-gap: 1.25rem;
+
+}
+.skills_titles{
+    display: flex;
+    justify-content: space-between;
+}
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+
+

@@ -1,0 +1,36 @@
+.home{
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro{
+   max-width: 540px;
+   text-align: center;
+}
+.home_name{
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+.home_img{
+  margin-bottom: 1.5rem;
+  width: 30%;
+}
+.home_socials{
+    display: flex;
+    align-items: center; /* İkonları ortala */
+    column-gap: 2rem;
+    margin-top: 8rem;
+    
+}
+.home_social-link{
+    color: var(--title-color);
+    font-size: 1.3rem;
+    transition: .3s;
+   
+}
+.home_social-link:hover{
+  color: hsl(43, 100%, 68%);
+
+}
